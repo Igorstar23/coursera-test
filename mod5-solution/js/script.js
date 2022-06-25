@@ -115,7 +115,7 @@ function buildAndShowHomeHTML (categories) {
        // Подсказка: короткое название выбранной категории нужно чем-то окружить перед вставкой
        // в домашний html-фрагмент.
        //
-       var homeHtmlToInsertIntoMainPage = insertProperty(buildAndShowCategoriesHTML(homeHtml), 'randomCategoryShortName', chosenCategoryShortName);
+       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, 'randomCategoryShortName', chosenCategoryShortName);
        console.log(homeHtmlToInsertIntoMainPage);
       
        // TODO: ШАГ 4: Вставьте HTML-код, созданный на ШАГЕ 3, на главную страницу
