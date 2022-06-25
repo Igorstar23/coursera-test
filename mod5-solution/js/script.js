@@ -103,7 +103,7 @@ function buildAndShowHomeHTML (categories) {
        // имя переменной подразумевает, что она ожидает.
        var chosenCategoryShortName = chooseRandomCategory(categories);
       // console.log(chosenCategoryShortName);
-      
+        console.log("[[[[[[[[[[[[[BEFORE]]]]]]]]]]]]]]\n" + homeHtml);
        // TODO: ШАГ 3: Замените {{randomCategoryShortName}} в домашнем фрагменте html на
        // выбранная категория из ШАГА 2. Используйте для этой цели существующую функцию insertProperty.
        // Просмотрите этот код для примера использования функции insertProperty.
@@ -116,14 +116,14 @@ function buildAndShowHomeHTML (categories) {
        // в домашний html-фрагмент.
        //
        var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, 'randomCategoryShortName', chosenCategoryShortName);
-       console.log(homeHtmlToInsertIntoMainPage);
+       console.log("[[[[[[[[[[[[[AFTER]]]]]]]]]]]]]]\n" + homeHtml);
       
        // TODO: ШАГ 4: Вставьте HTML-код, созданный на ШАГЕ 3, на главную страницу
        // Используйте для этой цели существующую функцию insertHtml. Просмотрите этот код для примера
        // как это сделать.
        // ....
-       insertHtml(buildAndShowCategoriesHTML(homeHtml), homeHtmlToInsertIntoMainPage);
-       console.log(homeHtml);
+       insertHtml(homeHtml, homeHtmlToInsertIntoMainPage);
+       console.log("[[[[[[[[[[[[[AFTER TWO]]]]]]]]]]]]]]\n" + homeHtml);
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
