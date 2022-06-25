@@ -122,7 +122,7 @@ function buildAndShowHomeHTML (categories) {
        // Используйте для этой цели существующую функцию insertHtml. Просмотрите этот код для примера
        // как это сделать.
        // ....
-       insertHtml(homeHtml, homeHtmlToInsertIntoMainPage);
+       insertHtml(buildAndShowCategoriesHTML(homeHtml), homeHtmlToInsertIntoMainPage);
        console.log(homeHtml);
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
