@@ -102,7 +102,7 @@ function buildAndShowHomeHTML (categories) {
        // Обратите внимание на тип данных, возвращаемых этой функцией, и на тип selectedCategoryShortName.
        // имя переменной подразумевает, что она ожидает.
        var chosenCategoryShortName = chooseRandomCategory(categories);
-       console.log(chosenCategoryShortName);
+      // console.log(chosenCategoryShortName);
       
        // TODO: ШАГ 3: Замените {{randomCategoryShortName}} в домашнем фрагменте html на
        // выбранная категория из ШАГА 2. Используйте для этой цели существующую функцию insertProperty.
